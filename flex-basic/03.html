@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .flex-container {
+        display: flex;
+      }
+      .flex-item:nth-child(1) {
+        flex: 0 0 auto;
+        width: 150px;
+      }
+      .flex-item:nth-child(2) {
+        flex-grow: 1;
+      }
+      .flex-item:nth-child(3) {
+        flex: 0 0 auto;
+        width: 200px;
+      }
+    </style>
+    <title>CSS Flex</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item item1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        molestias officiis aspernatur eius eaque. Pariatur ipsam vel mollitia,
+        quibusdam fuga molestias fugit dolor qui dolores quis, labore inventore
+        asperiores repellendus!
+      </div>
+      <div class="flex-item item2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, impedit
+        ab maxime doloremque cum accusantium aliquid quae. Eos veniam at
+        molestiae, dolore numquam, obcaecati quia aliquam consequatur voluptatem
+        tempora vitae.
+      </div>
+      <div class="flex-item item3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        inventore excepturi sunt fuga, suscipit maxime, nulla, dignissimos
+        voluptas non iste aspernatur! Sed expedita ratione rem quod ad, nemo
+        voluptas dolorem?
+      </div>
+    </div>
+  </body>
+</html>
