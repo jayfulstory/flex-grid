@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        text-align: center;
+        border: 10px solid red;
+        flex-flow: row wrap;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+      }
+      .flex-item {
+        flex: 1 1 auto;
+      }
+      .item1 {
+        width: 50%;
+      }
+      .item2 {
+        width: 25%;
+      }
+      .item3 {
+        width: 25%;
+      }
+
+      @media (max-width: 900px) {
+        .flex-container {
+          min-height: 100vh;
+        }
+        .flex-item {
+          width: 33%;
+        }
+      }
+      @media (max-width: 600px) {
+        .flex-container {
+          min-height: 100vh;
+        }
+        .flex-item {
+          width: 50%;
+        }
+      }
+    </style>
+    <title>CSS Flex</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item item1">1</div>
+      <div class="flex-item item2">22222222222</div>
+      <div class="flex-item item3">3</div>
+      <div class="flex-item item4">4</div>
+      <div class="flex-item item5">5</div>
+    </div>
+  </body>
+</html>
