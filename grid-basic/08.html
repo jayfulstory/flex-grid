@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .grid-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+          '...... header header'
+          'side-a main side-b'
+          '. . .'
+          'footer footer footer';
+      }
+      .header {
+        grid-area: header;
+      }
+      .sidebar-a {
+        grid-area: side-a;
+      }
+      .sidebar-b {
+        grid-area: side-b;
+      }
+      .main {
+        grid-area: main;
+      }
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header grid-item">Header</div>
+      <div class="sidebar-a grid-item">Sidebar A</div>
+      <div class="sidebar-b grid-item">Sidebar B</div>
+      <div class="main grid-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odio
+        voluptates nam quis repellendus laboriosam consectetur iusto accusantium
+        error eius incidunt autem minima ea numquam, libero aliquam, porro alias
+        nihil. Incidunt, eligendi quis unde facere odio blanditiis maxime harum
+        laboriosam! Fugiat repudiandae harum quia quis officiis laborum magni
+        minima. Nobis dolore libero voluptatem, possimus tenetur tempore ipsum
+        eius reprehenderit maiores! Sunt pariatur iure eos magnam repudiandae
+        optio minus ex eligendi, magni facere assumenda tempore error voluptas
+        cumque quaerat incidunt. Ducimus eos amet illo error. Odit hic est vel
+        nemo modi? Voluptas, ab et a dignissimos beatae ad quia sit pariatur rem
+        recusandae nihil. Quas placeat aliquid harum natus sint. Consectetur
+        illum recusandae illo possimus unde voluptas laborum quae itaque quia!
+        Est aperiam cupiditate, quasi porro possimus illo officia voluptas
+        corporis sapiente blanditiis aut, rerum assumenda ab tempora, molestias
+        error impedit necessitatibus soluta. Laborum amet enim maiores? Numquam
+        cum assumenda fugiat? Ex eligendi, accusamus magni expedita sapiente
+        molestiae nam similique rem error sunt vel, labore facilis pariatur
+        nihil amet repellendus aspernatur eveniet iure quae autem. Quaerat
+        inventore in et ex quae? Laboriosam minima aspernatur voluptatibus
+        itaque assumenda autem a obcaecati, repudiandae officiis ut reiciendis
+        perspiciatis modi porro. Dolorum temporibus praesentium eius labore
+        dolor officiis, nihil modi asperiores corporis debitis, culpa ullam.
+        Quasi maxime voluptate delectus perspiciatis, accusamus, necessitatibus
+        unde distinctio commodi tempore doloremque dolorum a velit quas iure?
+      </div>
+      <div class="footer grid-item">Footer</div>
+    </div>
+  </body>
+</html>
